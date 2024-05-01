@@ -1,0 +1,121 @@
+html{
+    font-size: 18px;
+    background-color: green;
+}
+
+#titletext{
+    color: white;
+    left: 20%;
+    font-size: 2.6em;
+    top: 0.18em; /*Even though this is in absolute, em keeps it on the exact part of the page, percentages don't */
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    position: absolute;
+}
+
+
+nav{
+    width: 70%;
+    height: 50px;
+    color: #EAC871;
+    font-family: "Lato", sans-serif;
+    border-bottom: 0.2em #EAC871 solid;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+.navbutton { /*position relative messes this up*/
+    font-size: 1.2em;
+    margin-right: 2em;
+    font-family: 'Lato', sans-serif;
+    padding: 0.4em auto black;
+    cursor: pointer;
+    font-weight: bold;
+    float: right; /* float e.g float:right is affected by margin, the example here being margin-right */
+}
+
+.navbutton:hover{
+    color: white;
+}
+
+#about_me_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#about_me_section h2{
+    max-width: 50%;
+    margin-right: 100px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+
+}
+
+#about_me_section img {
+    max-width: 350px;
+}
+
+#languages_section {
+    margin-left: 15%;  
+}
+
+#languages_section h3 {
+    font-size: 1.3rem;   
+    padding-bottom: 1em; 
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+}
+
+.skill_img{
+    display: inline-block; 
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.skill_back{
+    display: none;
+}
+
+.skill_img.splitter{
+    height: 100px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) { /*Phone*/
+    header{
+        text-align: center;
+    }
+    #titletext{
+        font-size: 4em;
+        position: relative;
+        left: auto;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100px;
+        align-items: end;
+    }
+
+    .navbutton { /*position relative messes this up*/
+        float: none;
+        padding-bottom: 1em;
+    }
+
+}
